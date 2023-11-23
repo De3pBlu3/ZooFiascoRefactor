@@ -1,6 +1,6 @@
 public class Lion extends Animal {
 
-    public Lion(String name, String[] favoriteFoods, String sound) {
+    public Lion(String name, String[] favoriteFoods) {
         super(name, "lion", favoriteFoods);
     }
 
