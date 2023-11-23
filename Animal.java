@@ -37,11 +37,10 @@ public class Animal {
     private String[] favoriteFoods;
     private String sound;
 
-    public Animal(String name, String type, String[] favoriteFoods, String sound) {
+    public Animal(String name, String type, String[] favoriteFoods) {
         this.name = name;
         this.type = type;
         this.favoriteFoods = favoriteFoods;
-        this.sound = sound;
     }
 
     public void makeSound() {
@@ -61,5 +60,13 @@ public class Animal {
     }
     public void performTrick(){
         System.out.println("Animal is performing a track");
+    }
+
+    public void printFavoriteFoods() {
+        if (favoriteFoods.length > 0) {
+            System.out.println(name + "'s favorite food: " + favoriteFoods[0]);
+        } else {
+            System.out.println(name + " has no favorite food");
+        }
     }
 }
