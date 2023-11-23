@@ -1,9 +1,9 @@
 // ZooManager.java
-public class ZooManager {
+public class ZooManager extends Zookeeper {
     private String name;
 
     public ZooManager(String name) {
-        this.name = name;
+        super(name);
     }
 
     public void announce(String message) {

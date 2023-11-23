@@ -1,8 +1,8 @@
 import java.util.Arrays;
 
 public class Monkey extends Animal{
-    public Monkey(String name, String[] favoriteFoods, String sound) {
-        super(name, "monkey", favoriteFoods, sound);
+    public Monkey(String name, String[] favoriteFoods) {
+        super(name, "monkey", favoriteFoods);
     }
     @Override
     public void performTrick(){
@@ -14,12 +14,9 @@ public class Monkey extends Animal{
     }
     @Override
     public void feed(){
-        System.out.println(getName() + " the " + getType() + " is eating " + Arrays.toString(getFavoriteFoods()));
+        System.out.println(getName() + " the " + getType() + " is eating " + Arrays.toString(getFavoriteFoods()[0].toCharArray()));
     }
-    @Override
-    public void sleep(){
-        System.out.println(getName() + " the " + getType() + " is sleeping.");
-    }
+
     @Override
     public void exercise(){
         System.out.println(getName() + " the " + getType() + " is excercising.");
