@@ -3,9 +3,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Zoo {
-    private List<Animal> animals;
-    private List<Zookeeper> zookeepers;
-    private ZooManager zooManager;
+    private List<Animal> animals;       // contains all animals
+    private List<Zookeeper> zookeepers; // contains all zookeepers
+    private ZooManager zooManager;  // zoo manager
 
     public Zoo() {
         animals = new ArrayList<>();
@@ -38,11 +38,7 @@ public class Zoo {
 
     public void printFavoriteFoods() {
         for (Animal animal : animals) {
-            if (animal.favoriteFoods.length > 0) {
-                System.out.println(animal.name + "'s favorite food: " + animal.favoriteFoods[0]);
-            } else {
-                System.out.println(animal.name + " has no favorite food");
-            }
+            animal.printFavoriteFoods();
         }
     }
 
