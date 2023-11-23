@@ -1,15 +1,11 @@
-public class JuniorZookeeper {
+public class JuniorZookeeper extends Zookeeper {
     private String name;
 
     public JuniorZookeeper(String name) {
-        this.name = name;
+        super(name);
     }
-
-    public void feedAnimal(Animal animal) {
-        System.out.println(name + " is feeding " + animal.name);
-    }
-
-    public void cleanCage(Animal animal) {
-        System.out.println(name + " is cleaning " + animal.type + "'s cage");
+    public void collectFeces(Animal animal) {
+        super.setResponsibilites("Collect feces");
+        System.out.println("You have collected the animals feces");
     }
 }
