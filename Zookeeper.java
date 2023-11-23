@@ -17,11 +17,6 @@ public class Zookeeper {
     public int getSalary() {
         return this.salary;
     }
-    public void getResponsibilites(){
-        this.Responsibilites.forEach((e) -> {
-            System.out.println(e);
-        });
-    }
     public void setResponsibilites(String task) {
         this.Responsibilites.add(task);
     }
