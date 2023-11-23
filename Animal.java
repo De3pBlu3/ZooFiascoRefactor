@@ -61,4 +61,12 @@ public class Animal {
     public void performTrick(){
         System.out.println("Animal is performing a track");
     }
+
+    public void printFavoriteFoods() {
+        if (favoriteFoods.length > 0) {
+            System.out.println(name + "'s favorite food: " + favoriteFoods[0]);
+        } else {
+            System.out.println(name + " has no favorite food");
+        }
+    }
 }
