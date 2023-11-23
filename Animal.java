@@ -56,4 +56,10 @@ public class Animal {
         System.out.println("Animal is sleeping");
     }
 
+    public void exercise() {
+        System.out.println("Animal is exercising");
+    }
+    public void performTrick(){
+        System.out.println("Animal is performing a track");
+    }
 }
