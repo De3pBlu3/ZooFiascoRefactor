@@ -1,8 +1,41 @@
 // Animal.java
 public class Animal {
-    public String name;
-    public String type;
-    public String[] favoriteFoods;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String[] getFavoriteFoods() {
+        return favoriteFoods;
+    }
+
+    public void setFavoriteFoods(String[] favoriteFoods) {
+        this.favoriteFoods = favoriteFoods;
+    }
+
+    public String getSound() {
+        return sound;
+    }
+
+    public void setSound(String sound) {
+        this.sound = sound;
+    }
+
+    private String name;
+    private String type;
+    private String[] favoriteFoods;
+    private String sound;
 
     public Animal(String name, String type, String[] favoriteFoods) {
         this.name = name;
@@ -11,27 +44,7 @@ public class Animal {
     }
 
     public void makeSound() {
-        switch (type) {
-            case "Lion":
-                System.out.println("Roar!");
-                break;
-            case "Monkey":
-                System.out.println("Ooh ooh ah ah!");
-                break;
-            case "Elephant":
-                System.out.println("Trumpet!");
-                break;
-            default:
-                System.out.println("Unknown animal type");
-        }
-    }
-
-    public void performTrick() {
-        if ("Monkey".equals(type)) {
-            System.out.println("Performs somersault");
-        } else {
-            System.out.println("No trick available");
-        }
+        System.out.println(sound);
     }
 
     public void feed() {
@@ -43,10 +56,17 @@ public class Animal {
     }
 
     public void exercise() {
-        if ("Elephant".equals(type)) {
-            System.out.println("Elephant is lifting weights");
+        System.out.println("Animal is exercising");
+    }
+    public void performTrick(){
+        System.out.println("Animal is performing a track");
+    }
+
+    public void printFavoriteFoods() {
+        if (favoriteFoods.length > 0) {
+            System.out.println(name + "'s favorite food: " + favoriteFoods[0]);
         } else {
-            System.out.println("No exercise available");
+            System.out.println(name + " has no favorite food");
         }
     }
 }

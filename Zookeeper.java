@@ -28,6 +28,7 @@ public class Zookeeper {
     public void basicResponsibilies(){
         this.Responsibilites.add("Clean cage");
         this.Responsibilites.add("Feed animal");
+
     }
     public void cleanCage(Animal animal) {
         System.out.println(name + " is cleaning " + animal.getType() + "'s cage");
