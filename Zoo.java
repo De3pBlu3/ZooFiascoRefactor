@@ -36,7 +36,7 @@ public class Zoo {
         }
     }
 
-    public void printFavoriteFoods() {
+    public void printAllFavoriteFoods() {
         for (Animal animal : animals) {
             animal.printFavoriteFoods();
         }
