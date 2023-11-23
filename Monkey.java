@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Monkey extends Animal{
     public Monkey(String name, String[] favoriteFoods, String sound) {
-        super(name, "monkey", favoriteFoods, sound);
+        super(name, "monkey", favoriteFoods);
     }
     @Override
     public void performTrick(){
