@@ -1,37 +1,19 @@
 // Animal.java
 public class Animal {
-    public String name;
-    public String type;
-    public String[] favoriteFoods;
+    private String name;
+    private String type;
+    private String[] favoriteFoods;
+    private String sound;
 
-    public Animal(String name, String type, String[] favoriteFoods) {
+    public Animal(String name, String type, String[] favoriteFoods, String sound) {
         this.name = name;
         this.type = type;
         this.favoriteFoods = favoriteFoods;
+        this.sound = sound;
     }
 
     public void makeSound() {
-        switch (type) {
-            case "Lion":
-                System.out.println("Roar!");
-                break;
-            case "Monkey":
-                System.out.println("Ooh ooh ah ah!");
-                break;
-            case "Elephant":
-                System.out.println("Trumpet!");
-                break;
-            default:
-                System.out.println("Unknown animal type");
-        }
-    }
-
-    public void performTrick() {
-        if ("Monkey".equals(type)) {
-            System.out.println("Performs somersault");
-        } else {
-            System.out.println("No trick available");
-        }
+        System.out.println(sound);
     }
 
     public void feed() {
@@ -42,11 +24,4 @@ public class Animal {
         System.out.println("Animal is sleeping");
     }
 
-    public void exercise() {
-        if ("Elephant".equals(type)) {
-            System.out.println("Elephant is lifting weights");
-        } else {
-            System.out.println("No exercise available");
-        }
-    }
 }
